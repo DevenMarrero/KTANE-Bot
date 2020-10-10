@@ -13,8 +13,6 @@ import Morse
 import KeyPad
 import SimpleWires
 import Simon
-# fix attribute error
-# Stop for OnFirst
 
 while 1:
     text = get_audio()
