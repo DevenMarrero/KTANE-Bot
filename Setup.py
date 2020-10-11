@@ -1,63 +1,50 @@
-from Voice import speak, get_audio
+from Voice import speak
 
-vowel = ''
-global even_odd
+vowel = 'no'
+even_odd = 'odd'
 batts = 0
-global parallelport
+parallelport = 'no'
 frk = False
 car = False
 strikes = 0
 
 
-def setup():
+def batteries(text):
+    global batts
+    text = text.replace('zero', '0').replace('one', '1').replace('two', '2').replace('to', '2').replace('too', '2') \
+        .replace('three', '3').replace('four', '4').replace('five', '5').replace('six', '6').replace('for', '4')
+    try:
+        batts = int(text)
+    except ValueError:
+        speak("Try batteries again")
+    print(batts)
+
+
+def serial(text):
     global vowel
     global even_odd
-    global batts
-    global parallelport
-    global frk
-    global car
-    global strikes
-
-    speak('Serial Number')
-    text = get_audio()
-    text.replace('foul', 'vowel').replace('bowel', 'vowel').replace('dowel', 'vowel').replace('rod', 'odd')
-
-    if 'vowel yes' in text:
+    text = text.replace('foul', 'vowel').replace('bowel', 'vowel').replace('dowel', 'vowel').replace('rod', 'odd')
+    if 'vowel' in text:
         vowel = 'yes'
-    else:
-        vowel = 'no'
-    print(vowel)
 
     if 'even' in text:
         even_odd = 'even'
-    else:
-        even_odd = 'odd'
-    print(even_odd)
+    print(vowel, even_odd)
 
-    speak('Batteries, Port, Freak, and Car')
-    txt = get_audio()
-    text = txt.replace('two', '2').replace('to', '2').replace('too', '2').replace('freaky', 'freak')\
-        .replace('three', '3').replace('four', '4').replace('five', '5').replace('six', '6').replace('zero', '0')\
-        .replace('for', '4').replace('one', '1')
-    batts = int(text[0])
-    print(batts)
 
-    if 'port yes' in text:
-        parallelport = 'yes'
-    else:
-        parallelport = 'no'
+def port():
+    global parallelport
+    parallelport = 'yes'
 
-    if 'freak yes' in text:
+
+def indicators(text):
+    global frk
+    global car
+    if 'freak' in text:
         frk = True
-    else:
-        frk = False
-
-    if 'car yes' in text:
+    if 'car' in text:
         car = True
-    else:
-        car = False
-
-    speak('Setup Complete')
+    print(frk, car)
 
 
 def addstrike():
@@ -70,3 +57,20 @@ def removestrike():
     global strikes
     strikes -= 1
     speak(f'Strike Removed, {strikes} total')
+
+
+def resetsetup():
+    global vowel
+    global even_odd
+    global batts
+    global parallelport
+    global frk
+    global car
+    global strikes
+    vowel = 'no'
+    even_odd = 'odd'
+    batts = 0
+    parallelport = 'no'
+    frk = False
+    car = False
+    strikes = 0
