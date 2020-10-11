@@ -1,4 +1,4 @@
-import Setup
+import BombSetup
 from Voice import speak
 
 
@@ -9,10 +9,10 @@ def button(text):
         speak('Not a button')
         return
 
-    if Setup.batts > 1 and word == 'detonate':
+    if BombSetup.batts > 1 and word == 'detonate':
         speak("Press the Button")
 
-    elif Setup.batts > 2 and Setup.frk:
+    elif BombSetup.batts > 2 and BombSetup.frk:
         speak("Press the Button")
 
     elif color == 'red' and word == 'hold':

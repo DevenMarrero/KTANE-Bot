@@ -7,7 +7,7 @@ import WireSequence
 import Memory
 import Maze
 import Button
-import Setup
+import BombSetup
 import Password
 import Morse
 import KeyPad
@@ -21,7 +21,7 @@ def total_reset():
     Morse.resetmorse()
     WireSequence.resetsequence()
     Morse.resetmorse()
-    Setup.resetsetup()
+    BombSetup.resetsetup()
     speak('Bomb Reset')
 
 
@@ -108,26 +108,26 @@ if __name__ == '__main__':
         # Setup
         elif 'batteries' in text:
             text = text.replace('batteries ', '')
-            Setup.batteries(text)
+            BombSetup.batteries(text)
 
         elif 'serial' in text or 'cereal' in text:
             text = text.replace('serial ', '')
-            Setup.serial(text)
+            BombSetup.serial(text)
 
         elif 'port' in text or 'parallel port' in text:
             text = text.replace('port ', '').replace('parallel port ', '')
-            Setup.port()
+            BombSetup.port()
 
         elif 'indicators' in text:
             text = text.replace('indicators ', '')
-            Setup.indicators(text)
+            BombSetup.indicators(text)
 
         # Commands
         elif 'add strike' in text:
-            Setup.addstrike()
+            BombSetup.addstrike()
 
         elif 'remove strike' in text:
-            Setup.removestrike()
+            BombSetup.removestrike()
 
         elif text == 'the bomb is complete':
             speak('We did it')

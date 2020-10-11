@@ -1,4 +1,4 @@
-import Setup
+import BombSetup
 from Voice import speak
 
 
@@ -26,7 +26,7 @@ def simplewires(text):
     if wires == '4':
         w4 = scolors[3]
 
-        if colors.count('red') > 1 and Setup.even_odd == 'odd':
+        if colors.count('red') > 1 and BombSetup.even_odd == 'odd':
             speak('last red wire')
 
         elif w4 == 'yellow' and colors.count('red') == 0:
@@ -44,7 +44,7 @@ def simplewires(text):
     if wires == '5':
         w5 = scolors[4]
 
-        if w5 == 'black' and Setup.even_odd == 'odd':
+        if w5 == 'black' and BombSetup.even_odd == 'odd':
             speak('Fourth Wire')
 
         elif colors.count('red') == 1 and colors.count('yellow') > 1:
@@ -58,7 +58,7 @@ def simplewires(text):
 
     if wires == '6':
 
-        if colors.count('yellow') == 0 and Setup.even_odd == 'odd':
+        if colors.count('yellow') == 0 and BombSetup.even_odd == 'odd':
             speak('Third wire')
 
         elif colors.count('yellow') == 1 and colors.count('white') > 1:
