@@ -2,7 +2,7 @@ import os
 import playsound
 import speech_recognition as sr
 from gtts import gTTS
-said = ''
+import winsound
 
 
 def speak(words):
@@ -14,8 +14,9 @@ def speak(words):
 
 
 def get_audio():
-    global said
+    said = ''
     print('getting audio -')
+    winsound.Beep(500, 100)
     r = sr.Recognizer()
     with sr.Microphone() as source:
         r.dynamic_energy_threshold = False
