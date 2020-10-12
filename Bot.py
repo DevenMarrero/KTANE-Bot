@@ -78,6 +78,7 @@ if __name__ == '__main__':
             speak('Memory reset')
 
         elif 'memory' in text:  # Number on screen, then buttons
+            text = text.replace('to', '2').replace('too', '2').replace('two', '2')
             text = text.replace('for ', '4').replace('memory ', '')
             Memory.memory(text)
 
