@@ -76,19 +76,19 @@ Step 1
 ![image](https://user-images.githubusercontent.com/70239160/95711600-f9d1f600-0c17-11eb-83e3-d99d24c6793b.png)
 
 ```
-Ballon        Euro          Copyright     six           Trident      six
+Ballon        Euro          Copyright     six           Trident       six
 
-Alpha         Ballon        Nose          Paragraph     Smile         Euro
+Alpha         Ballon        Nose          Paragraph     Smile          Euro
 
-Lambda        Charlie       Cursive       Bravo         Bravo         Puzzle
+Lambda        Charlie       Cursive       Bravo         Bravo          Puzzle
 
-Lightning     Cursive       Butterfly     kitty         Charlie       Smash
+Lightning     Cursive       Butterfly     kitty         Charlie        Smash
 
-Kitty         Star          Semicolon     ButterFly     Paragraph     Trident
+Kitty         Star          Semicolon     ButterFly     Paragraph      Trident
 
-Hotel         Hotel         Lambda        Question      Three         November
+Hotel         Hotel         Lambda        Question      Three          November
 
-Charlie       Question      Star          Smile         Star          Omega
+Charlie       Question      Star          Smile         Star           Omega
 ```
 
 ### Simon Says
