@@ -17,7 +17,7 @@ def memory(s):
     global sfourpos
     global sfourlabel
     
-    if len(screen) != 5:
+    if not len(screen) == 5:
         speak('Not enough numbers')
         return
     
@@ -27,7 +27,7 @@ def memory(s):
             if int(screen[0]) == 1:
                 speak('Position 2')
                 sonepos = 2
-                sonelabel = screen[sonepos] # 2
+                sonelabel = screen[sonepos]  # 2
 
             elif int(screen[0]) == 2:
                 speak('Position 2')
