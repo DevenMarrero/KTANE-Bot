@@ -5,7 +5,7 @@
 ## Description
 This is a Python bot built to act as the 'expert' and your diffusal teammate for the Game [Keep Tallking and Nobody Explodes](https://store.steampowered.com/app/341800/Keep_Talking_and_Nobody_Explodes/)
 
-For the unfamiliar this is a 2+ player game where one player sits at a computer and describes a bomb only they can see to the experts. 
+For the unfamiliar, this is a 2+ player game where one player sits at a computer and describes a bomb only they can see to the experts. 
 The experts must then quickly flip through their multi-page [manual](https://bombmanual.com/) and use the information provided to help the diffuser safely diffuse the bomb.
 
 ## Installation- Windows Only
