@@ -36,7 +36,7 @@ All values will default to 0 or False.
 ```
 Batteries <#>            -Number of batteries
 Serial <vowel> <even>    -Say vowel if there is a vowel and likewise for even, ie: `serial vowel even` or `serial vowel`
-Indicators <car/freak>   -Similar to Serial, say what indicators are lit, ie: "Indicators freak"
+Indicators <car> <freak> -Similar to Serial, say what indicators are lit, ie: "Indicators freak"
 Parallel port <>         -Say command if there is a port, otherwise don't say it
 ```
 
