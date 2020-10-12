@@ -133,11 +133,14 @@ if __name__ == '__main__':
             BombSetup.indicators(text)
 
         # Commands
-        elif 'add strike' in text:
+        elif 'add strike' in text or "i'd strike" in text:
             BombSetup.addstrike()
 
         elif 'remove strike' in text:
             BombSetup.removestrike()
+
+        elif 'bomb status' in text:
+            BombSetup.bomb_status()
 
         elif text == 'the bomb is complete':
             speak('We did it')
