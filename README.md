@@ -103,13 +103,13 @@ Example:
 
 **Step 1**
 
-`On First <word> -Word on display`
+`On First one <word> -Word on display`
 
 **Step 2**
 
-Ridirected autimatically from step 1
+`On First two <word> -Word on button`
 
-When the bot reads out the possible buttons say 'Stop' to save time and continue
+When the bot reads out the possible buttons say `Stop` to save time and continue
 
 `<Word> -Word on button from step 1`
 
