@@ -27,9 +27,7 @@ def holdbutton(text):
 
     if 'blue' in text:
         speak('4')
-
     elif 'yellow' in text:
         speak('5')
-
     else:
         speak('1')

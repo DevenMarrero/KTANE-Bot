@@ -40,26 +40,26 @@ def compwires(text):
             answer.append('Yes, ')
 
         # Cut if Serial is Even
-        elif (red and blue and not star and led) and (BombSetup.even_odd.lower() == 'even'):
+        elif (red and blue and not star and led) and BombSetup.even:
             answer.append('Yes, ')
 
-        elif (red and blue and not star and not led) and (BombSetup.even_odd.lower() == 'even'):
+        elif (red and blue and not star and not led) and BombSetup.even:
             answer.append('Yes, ')
 
-        elif (red and not blue and not star and not led) and (BombSetup.even_odd.lower() == 'even'):
+        elif (red and not blue and not star and not led) and BombSetup.even:
             answer.append('Yes, ')
 
-        elif (not red and blue and not star and not led) and (BombSetup.even_odd.lower() == 'even'):
+        elif (not red and blue and not star and not led) and BombSetup.even:
             answer.append('Yes, ')
 
         # Cut if Parallel Port
-        elif (red and blue and star and not led) and (BombSetup.parallelport.lower() == 'yes'):
+        elif (red and blue and star and not led) and BombSetup.parallelport:
             answer.append('Yes, ')
 
-        elif (not red and blue and star and led) and (BombSetup.parallelport.lower() == 'yes'):
+        elif (not red and blue and star and led) and BombSetup.parallelport:
             answer.append('Yes, ')
 
-        elif (not red and blue and not star and led) and (BombSetup.parallelport.lower() == 'yes'):
+        elif (not red and blue and not star and led) and BombSetup.parallelport:
             answer.append('Yes, ')
 
         # Cut if Bomb has 2 or More Batteries

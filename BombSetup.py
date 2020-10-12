@@ -1,9 +1,9 @@
 from Voice import speak
 
-vowel = 'no'
-even_odd = 'odd'
+vowel = True
+even = False
 batts = 0
-parallelport = 'no'
+parallelport = False
 frk = False
 car = False
 strikes = 0
@@ -17,24 +17,22 @@ def batteries(text):
         batts = int(text)
     except ValueError:
         speak("Try batteries again")
-    print(batts)
 
 
 def serial(text):
     global vowel
-    global even_odd
+    global even
     text = text.replace('foul', 'vowel').replace('bowel', 'vowel').replace('dowel', 'vowel').replace('rod', 'odd')
     if 'vowel' in text:
-        vowel = 'yes'
+        vowel = True
 
     if 'even' in text:
-        even_odd = 'even'
-    print(vowel, even_odd)
+        even = True
 
 
 def port():
     global parallelport
-    parallelport = 'yes'
+    parallelport = True
 
 
 def indicators(text):
@@ -44,7 +42,6 @@ def indicators(text):
         frk = True
     if 'car' in text:
         car = True
-    print(frk, car)
 
 
 def addstrike():
@@ -61,16 +58,16 @@ def removestrike():
 
 def resetsetup():
     global vowel
-    global even_odd
+    global even
     global batts
     global parallelport
     global frk
     global car
     global strikes
-    vowel = 'no'
-    even_odd = 'odd'
+    vowel = False
+    even = False
     batts = 0
-    parallelport = 'no'
+    parallelport = False
     frk = False
     car = False
     strikes = 0
