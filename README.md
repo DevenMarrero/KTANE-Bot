@@ -206,7 +206,7 @@ If there is more than one morse module make sure to reset morse
 
 ### Complex Wires
 
-`complicated <wires> - Wire attributes include (Red, Blue, Star, Light, None)`
+`complex wires <wires> - Wire attributes include (Red, Blue, Star, Light, None)`
 
 Seperate wires with the word 'next' None/black is for wires with no attributes
 
@@ -220,7 +220,7 @@ Red/Blue with Light/Star
 No attributes
 ```
 
-`complicated red next blue star next red blue star light next none`
+`complex wires red next blue star next red blue star light next none`
 
 ### Wire Sequence
 
