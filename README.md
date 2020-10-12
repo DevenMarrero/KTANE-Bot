@@ -45,10 +45,11 @@ Parallel port <>         -Say command if there is a port, otherwise don't say it
 ```
 Add Strike           -Adds strike to bomb
 Remove Strike        -Removes strike from bomb
-bomb reset           -Resets the bomb to try again
+Bomb Status          -Reads out bomb variables
+Bomb Reset           -Resets the bomb to try again
 The bomb is complete -Happy celebration, also resets bomb
 We blew up           -Denial, also resets bomb
-exit program         -Closes bot
+Exit program         -Closes bot
 ```
 
 ### Simple Wires
