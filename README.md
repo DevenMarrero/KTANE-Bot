@@ -73,7 +73,7 @@ Step 1
 
 `Keypad <symbols>`
 
-![image](https://user-images.githubusercontent.com/70239160/95704097-a0ac9700-0c04-11eb-9b25-77e9aa50c138.png) ![image](https://user-images.githubusercontent.com/70239160/95710356-5849a500-0c15-11eb-8d24-e4308e819794.png)
+![image](https://user-images.githubusercontent.com/70239160/95710445-8fb85180-0c15-11eb-9db8-35d806d977f7.png) 
 
 `Ballon, Alpha, Lambda, Lightning, Kitty, Hotel, Charlie`
 
