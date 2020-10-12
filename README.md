@@ -73,16 +73,22 @@ Step 1
 
 `Keypad <symbols>`
 
-![image](https://user-images.githubusercontent.com/70239160/95710749-2a189500-0c16-11eb-9fb0-819ef4adc483.png)
+![image](https://user-images.githubusercontent.com/70239160/95711600-f9d1f600-0c17-11eb-83e3-d99d24c6793b.png)
 
 ```
-Ballon Euro Copyright six Trident six
-Alpha Ballon Nose Paragraph Smile Euro
-Lambda Charlie Cursive Bravo Bravo Puzzle
-Lightning Cursive Butterfly kitty Charlie Smash
-Kitty Star Semicolon ButterFly Paragraph Trident
-Hotel Hotel Lambda Question Three November
-Charlie Question Star Smile Star Omega
+Ballon      Euro     Copyright     six     Trident     six
+
+Alpha     Ballon     Nose     Paragraph     Smile     Euro
+
+Lambda     Charlie     Cursive     Bravo     Bravo     Puzzle
+
+Lightning     Cursive     Butterfly     kitty     Charlie     Smash
+
+Kitty     Star     Semicolon     ButterFly     Paragraph     Trident
+
+Hotel     Hotel     Lambda    Question     Three     November
+
+Charlie     Question     Star     Smile     Star     Omega
 ```
 
 ### Simon Says
