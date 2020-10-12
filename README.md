@@ -40,7 +40,7 @@ Indicators <car/freak> -Similar to Serial, say what indicators are lit, ie: "Ind
 Parallel port <>       -Say command if there is a port, otherwise don't say it
 ```
 
-### Bomb Commands
+### Bomb Control
 
 ```
 Add Strike           -Adds strike to bomb
@@ -50,3 +50,55 @@ The bomb is complete -Happy celebration, also resets bomb
 We blew up           -Denial, also resets bomb
 exit program         -Closes bot
 ```
+
+### Simple Wires
+
+`Simple Wires <wires> -Name all colours of wires (red, blue, yellow, black, white)`
+
+Example:
+
+`Simple Wires Red Blue Red Black`
+
+### Button
+
+`Button <colour, word> -Colour of the button then word displayed`
+
+Example:
+
+`Button Yellow Detonate`
+
+### Strip
+
+LED Strip that lights up after holding button
+
+`Strip <colour> -Colour of LED strip`
+
+### KeyPad
+
+`Keypad <symbols> -All 4 keypad symbols`
+
+![image](https://user-images.githubusercontent.com/70239160/95704097-a0ac9700-0c04-11eb-9b25-77e9aa50c138.png)
+
+`Ballon, Alpha, Lambda, Lightning, Kitty, Hotel, Charlie`
+
+![image](https://user-images.githubusercontent.com/70239160/95704191-dbaeca80-0c04-11eb-93e2-fc0db738327a.png)
+
+`Euro, Ballon, Charlie, Cursive, star, Hotel, Question`
+
+![image](https://user-images.githubusercontent.com/70239160/95704238-0862e200-0c05-11eb-9b90-30cc21e6c74a.png)
+
+`Copyright, nose, cursive, butterfly, semicolon, lambda, star`
+
+![image](https://user-images.githubusercontent.com/70239160/95704290-33e5cc80-0c05-11eb-8546-ad4ad26348ee.png)
+
+`Six, Paragraph, Bravo, Kitty, Butterfly, Question, Smile/Smiley`
+
+![image](https://user-images.githubusercontent.com/70239160/95704393-858e5700-0c05-11eb-84c3-f4b820e21b99.png)
+
+`Trident, Smile, Bravo, Charlie, Paragraph, Three`
+
+![image](https://user-images.githubusercontent.com/70239160/95704690-968b9800-0c06-11eb-8669-b85523ce30d5.png)
+
+`Six, Euro, Puzzle, Smash, Trident, November, Omega`
+
+
