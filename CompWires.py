@@ -6,6 +6,7 @@ answer = []
 def compwires(text):
 
     wires = text.split(' next ')
+    print(wires)
 
     for wire in wires:
         wire = wire.lower()
