@@ -61,7 +61,9 @@ if __name__ == '__main__':
 
         elif "on 1st 2" in text.replace('to', '2').replace('too', '2').replace('two', '2') \
                 or "on first 2" in text.replace('to', '2').replace('too', '2').replace('two', '2'):
-            text = text.split()[-1]
+            text = text.replace('to', '2').replace('too', '2').replace('two', '2')
+            text = text.replace("on 1st 2", '').replace("on first 2", '')
+
             answer = OnFirst.onfirstwords(text)
             p = multiprocessing.Process(target=speak, args=(answer,))
             p.start()

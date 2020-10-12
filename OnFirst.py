@@ -144,7 +144,6 @@ def onfirstwords(text):
                  "... SURE...u r... YOU ARE"
     else:
         speak('not a word')
-        onfirstwords()
         return
     return answer
 
