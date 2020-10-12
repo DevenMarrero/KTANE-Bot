@@ -102,3 +102,71 @@ LED Strip that lights up after holding button
 `Six, Euro, Puzzle, Smash, Trident, November, Omega`
 
 
+### Simon Says
+
+`simon <colours> -Coloured Flashes in oder (Blue, Yellow, Green, Red)`
+
+Example:
+
+`Simon Red Red Blue`
+
+### Who's On First
+
+**Step 1**
+
+`On First <word> -Word on display`
+
+**Step 2**
+
+Ridirected autimatically from step 1
+
+`<Word> -Word on button from step 1`
+
+Here is a table of what you will have to say for each word to not mix up the bot
+
+```
+' '     - Empty
+blank   - blank
+c       - Charlie
+cee     - c c 
+display - display
+done - done
+first - first
+hold - hold
+hold on - hold on
+lead - lead
+led - L. E. D.
+leed - lead to
+left - left
+like - like
+middle - middle
+next - next
+no - no
+nothing - nothing
+okay - okay
+press - press
+read - read
+red - red
+reed - read plant
+ready - ready
+says - says
+see - see
+sure - sure
+their - there India
+there - there
+they're - they are apostrophy
+they are - they are
+u - you letter
+ur - you are letters
+uh huh - h u h
+uh uh - uh
+uhhh - u3h
+wait - wait
+what - what
+what? - what question
+yes - yes
+you - you
+your - your
+you're - you are apostrophy
+you are - you are
+```
