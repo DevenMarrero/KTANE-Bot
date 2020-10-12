@@ -108,13 +108,13 @@ def onfirstwords(text):
     elif 'you are letters' in text:
         answer = "DONE... U letter... UR"
 
-    elif 'huh' in text.strip:
+    elif 'huh' in text.strip():
         answer = "h u h"
 
-    elif 'uh' in text.strip:
+    elif 'uh' in text.strip():
         answer = "UR... U, letter... YOU ARE... your, apostrophe... NEXT... U h"
 
-    elif 'u3h' in text.strip:
+    elif 'u3h' in text.strip():
         answer = "READY... NOTHING... LEFT... WHAT... OKAY... YES... RIGHT... NO... PRESS... BLANK... u3h"
 
     elif 'wait' in text or 'weight' in text:
