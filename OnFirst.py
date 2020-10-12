@@ -47,9 +47,8 @@ def onfirst(text):
     return True
 
 
-def onfirstwords():
-    text = get_audio()
-    text = text.lower().strip()
+def onfirstwords(text):
+    text = text.lower()
 
     if text == 'blank':
         answer = "WAIT... RIGHT... OKAY... MIDDLE... BLANK"
@@ -109,13 +108,13 @@ def onfirstwords():
     elif text == 'you are letters':
         answer = "DONE... U letter... UR"
 
-    elif text == 'h u h':
+    elif text.strip() == 'huh':
         answer = "h u h"
 
-    elif text == 'u h':
+    elif text.strip() == 'uh':
         answer = "UR... U, letter... YOU ARE... your, apostrophe... NEXT... U h"
 
-    elif text == 'u3h':
+    elif text.strip() == 'u3h':
         answer = "READY... NOTHING... LEFT... WHAT... OKAY... YES... RIGHT... NO... PRESS... BLANK... u3h"
 
     elif text == 'wait' or text == 'weight':
@@ -124,7 +123,7 @@ def onfirstwords():
     elif text == 'what':
         answer = "u3h... WHAT"
 
-    elif text == 'what question':
+    elif text == 'whatquestion':
         answer = "YOU... HOLD... your, apostrophe... YOUR... YOU... DONE... UH UH... LIKE... YOU ARE... h u h...u r... "\
                  "NEXT...what question"
 

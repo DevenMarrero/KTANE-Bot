@@ -34,7 +34,7 @@ if __name__ == '__main__':
 
         # Modules
         if 'simple wires' in text:  # Name all wires. ie(red, blue, red)
-            text = text.replace('.', '').replace('wires ', '')
+            text = text.replace('.', '').replace('simple wires ', '')
             SimpleWires.simplewires(text)
 
         elif 'button' in text:  # Colour then word ie(yellow Press)
@@ -53,17 +53,23 @@ if __name__ == '__main__':
             text = text.replace('simon ', '')
             Simon.simon(text)
 
-        elif "on 1st" in text:  # Word on screen, then word on told button
-            text = text.replace("words ", '').replace("on 1st ", '')
-            if OnFirst.onfirst(text):
-                answer = OnFirst.onfirstwords()
-                p = multiprocessing.Process(target=speak, args=(answer,))
-                p.start()
+        elif "on 1st 1" in text.replace('one', '1') or "on first 1" in text.replace('one', '1'):
+            # Word on screen, then word on told button
+            text = text.replace("on first 1 ", '').replace("on 1st 1 ", '').replace("on first one ", '')\
+                .replace("on 1st one ", '')
+            OnFirst.onfirst(text)
 
-                while p.is_alive():
-                    listen = get_audio()
-                    if listen == 'stop':
-                        p.terminate()
+        elif "on 1st 2" in text.replace('to', '2').replace('too', '2').replace('two', '2') \
+                or "on first 2" in text.replace('to', '2').replace('too', '2').replace('two', '2'):
+            text = text.split()[-1]
+            answer = OnFirst.onfirstwords(text)
+            p = multiprocessing.Process(target=speak, args=(answer,))
+            p.start()
+
+            while p.is_alive():
+                listen = get_audio()
+                if listen == 'stop':
+                    p.terminate()
 
         elif 'reset memory' in text:
             Memory.resetmemstage()
@@ -81,8 +87,8 @@ if __name__ == '__main__':
             text = text.replace('morse ', '')
             Morse.morse(text)
 
-        elif 'complicated' in text:  # Wire attributes separated by 'next' ie(red star next blue)
-            text = text.replace('complicated ', '').replace('read', 'red')
+        elif 'complex wires' in text:  # Wire attributes separated by 'next' ie(red star next blue)
+            text = text.replace('complex wires ', '').replace('read', 'red')
             CompWires.compwires(text)
 
         elif 'sequence' in text or 'sequins' in text:  # colour then letter sep by 'next' ie(red alpha next blue bravo)
