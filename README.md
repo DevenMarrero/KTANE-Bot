@@ -77,23 +77,23 @@ Step 1
 
 `Ballon, Alpha, Lambda, Lightning, Kitty, Hotel, Charlie`
 
-![image](https://user-images.githubusercontent.com/70239160/95704191-dbaeca80-0c04-11eb-93e2-fc0db738327a.png)
+![image](https://user-images.githubusercontent.com/70239160/95710499-afe81080-0c15-11eb-842f-5505754d6a84.png)
 
 `Euro, Ballon, Charlie, Cursive, star, Hotel, Question`
 
-![image](https://user-images.githubusercontent.com/70239160/95704238-0862e200-0c05-11eb-9b90-30cc21e6c74a.png)
+![image](https://user-images.githubusercontent.com/70239160/95710536-c2fae080-0c15-11eb-9aed-deff8fb28244.png)
 
 `Copyright, nose, cursive, butterfly, semicolon, lambda, star`
 
-![image](https://user-images.githubusercontent.com/70239160/95704290-33e5cc80-0c05-11eb-8546-ad4ad26348ee.png)
+![image](https://user-images.githubusercontent.com/70239160/95710560-cd1cdf00-0c15-11eb-81b3-affae862f024.png)
 
 `Six, Paragraph, Bravo, Kitty, Butterfly, Question, Smile/Smiley`
 
-![image](https://user-images.githubusercontent.com/70239160/95704393-858e5700-0c05-11eb-84c3-f4b820e21b99.png)
+![image](https://user-images.githubusercontent.com/70239160/95710600-d9a13780-0c15-11eb-8e37-706de3dda11b.png)
 
 `Trident, Smile, Bravo, Charlie, Paragraph, Three`
 
-![image](https://user-images.githubusercontent.com/70239160/95704690-968b9800-0c06-11eb-8669-b85523ce30d5.png)
+![image](https://user-images.githubusercontent.com/70239160/95710625-e6be2680-0c15-11eb-84e9-b99d31e0c4f6.png)
 
 `Six, Euro, Puzzle, Smash, Trident, November, Omega`
 
