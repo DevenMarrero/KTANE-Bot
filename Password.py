@@ -29,8 +29,6 @@ def password(text):
     letters = ' '.join([str(elem) for elem in crow3])
     curr_password.append(letters)
 
-    print(curr_password)
-
     passwords = ['about',
                  'after', 'again', 'below', 'could', 'every', 'first', 'found', 'great',
                  'house', 'large', 'learn', 'never', 'other', 'place', 'plant', 'point',
@@ -45,5 +43,4 @@ def password(text):
 
     janswer = ' '.join([str(elem) for elem in posibles])
     speak(janswer)
-    curr_password = []
 

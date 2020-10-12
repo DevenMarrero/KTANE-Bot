@@ -53,7 +53,7 @@ if __name__ == '__main__':
             text = text.replace('simon ', '')
             Simon.simon(text)
 
-        elif "words" in text or "on 1st" in text:  # Word on screen, then word on told button
+        elif "on 1st" in text:  # Word on screen, then word on told button
             text = text.replace("words ", '').replace("on 1st ", '')
             if OnFirst.onfirst(text):
                 answer = OnFirst.onfirstwords()
@@ -69,7 +69,7 @@ if __name__ == '__main__':
             Memory.resetmemstage()
             speak('Memory reset')
 
-        elif 'memory' in text:  # Number on screen
+        elif 'memory' in text:  # Number on screen, then buttons
             text = text.replace('for ', '4').replace('memory ', '')
             Memory.memory(text)
 
@@ -93,7 +93,8 @@ if __name__ == '__main__':
             WireSequence.resetsequence()
             speak('Sequence Reset')
 
-        elif 'maze' in text or 'maize' in text or "may's" in text:  # 1 Indicator, start, finish sep by 'next' ie(44 next 43 next 55)
+        elif 'maze' in text or 'maize' in text or "may's" in text:  #
+            # 1 Indicator, start, finish sep by 'next' ie(44 next 43 next 55)
             text = text.replace('maze ', '').replace('maize ', '').replace("may's ", '')
             Maze.maze(text)
 

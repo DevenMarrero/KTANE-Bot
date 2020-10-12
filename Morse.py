@@ -4,10 +4,8 @@ morse_letters = []
 
 def morse(text):
     global morse_letters
-    words = text.replace('morse', '')
-    words = words.replace(' ', '').replace('-', '')
-    code = words.replace('one', '-').replace('zero', '.').replace('1', '-').replace('0', '.').replace(':', '')
-    print(code)
+    text = text.replace(' ', '').replace('-', '')
+    code = text.replace('one', '-').replace('zero', '.').replace('1', '-').replace('0', '.').replace(':', '')
 
     morseg = {
         'a': '.-',
@@ -74,7 +72,6 @@ def morse(text):
                 if word in posibles:
                     posibles.remove(word)
                 break
-    print(posibles)
     if len(posibles) == 1:
         janswer = ' '.join([str(elem) for elem in posibles])
         speak(janswer)

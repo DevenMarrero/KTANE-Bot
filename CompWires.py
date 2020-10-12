@@ -24,7 +24,7 @@ def compwires(text):
         else:
             star = False
 
-        if 'led' in wire:
+        if 'light' in wire:
             led = True
         else:
             led = False
