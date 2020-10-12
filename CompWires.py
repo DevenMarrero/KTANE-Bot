@@ -7,7 +7,8 @@ def compwires(text):
 
     wires = text.split(' next ')
 
-    for wire in wires.lower():
+    for wire in wires:
+        wire = wire.lower()
 
         if 'red' in wire:
             red = True
