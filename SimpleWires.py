@@ -23,10 +23,10 @@ def simplewires(text):
         else:
             speak("Last Wire")
 
-    if wires == '4':
+    elif wires == '4':
         w4 = scolors[3]
 
-        if colors.count('red') > 1 and BombSetup.even_odd == 'odd':
+        if colors.count('red') > 1 and not BombSetup.even:
             speak('last red wire')
 
         elif w4 == 'yellow' and colors.count('red') == 0:
@@ -41,10 +41,10 @@ def simplewires(text):
         else:
             speak('Second Wire')
 
-    if wires == '5':
+    elif wires == '5':
         w5 = scolors[4]
 
-        if w5 == 'black' and BombSetup.even_odd == 'odd':
+        if w5 == 'black' and not BombSetup.even:
             speak('Fourth Wire')
 
         elif colors.count('red') == 1 and colors.count('yellow') > 1:
@@ -56,9 +56,9 @@ def simplewires(text):
         else:
             speak('First Wire')
 
-    if wires == '6':
+    elif wires == '6':
 
-        if colors.count('yellow') == 0 and BombSetup.even_odd == 'odd':
+        if colors.count('yellow') == 0 and not BombSetup.even:
             speak('Third wire')
 
         elif colors.count('yellow') == 1 and colors.count('white') > 1:
@@ -69,3 +69,9 @@ def simplewires(text):
 
         else:
             speak('Fourth Wire')
+
+    elif wires == '7':
+        speak('Too many wires')
+
+    elif wires <= '2':
+        speak('Not enough wires')

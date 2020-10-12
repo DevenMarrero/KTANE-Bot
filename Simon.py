@@ -5,7 +5,7 @@ from Voice import speak
 def simon(text):
     flash = text.replace('blue', 'b').replace('red', 'r').replace('yellow', 'y').replace('green', 'g')
 
-    if BombSetup.vowel == 'yes':
+    if BombSetup.vowel:
 
         if BombSetup.strikes == 0:
             flash = flash.replace('r', "BLUE, ")

@@ -33,7 +33,7 @@ if __name__ == '__main__':
         text = txt.replace("moore's", 'morse').replace("/", ' ')
 
         # Modules
-        if 'wires' in text:  # Name all wires. ie(red, blue, red)
+        if 'simple wires' in text:  # Name all wires. ie(red, blue, red)
             text = text.replace('.', '').replace('wires ', '')
             SimpleWires.simplewires(text)
 
@@ -45,7 +45,7 @@ if __name__ == '__main__':
             text = text.replace('strip ', '')
             Button.holdbutton(text)
 
-        elif 'keypad' in text or 'symbols' in text:  # Say symbols
+        elif 'keypad' in text:  # Say symbols
             text = text.replace('keypad ', '').replace('symbols ', '')
             KeyPad.keypad(text)
 
@@ -114,7 +114,7 @@ if __name__ == '__main__':
             text = text.replace('serial ', '')
             BombSetup.serial(text)
 
-        elif 'port' in text or 'parallel port' in text:
+        elif 'parallel port' in text:
             text = text.replace('port ', '').replace('parallel port ', '')
             BombSetup.port()
 
@@ -134,11 +134,12 @@ if __name__ == '__main__':
             total_reset()
 
         elif 'we blew up' in text:
-            speak("It's Not my Fault")
+            speak("It's Not my Fault, i'm the bot")
             total_reset()
 
-        elif 'reset bomb' in text or 'total reset' in text:
+        elif 'bomb reset' in text:
             total_reset()
 
-        elif 'exit program' in text or 'end program' in text:
+        elif 'exit program' in text:
+            speak('Goodbye')
             break
