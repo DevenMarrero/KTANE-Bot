@@ -1,6 +1,6 @@
 from Voice import speak
 
-vowel = True
+vowel = False
 even = False
 batts = 0
 parallelport = False
@@ -42,6 +42,16 @@ def indicators(text):
         frk = True
     if 'car' in text:
         car = True
+
+
+def bomb_status():
+    speak(f'Batteries {batts}...'
+          f' Vowel {vowel}...'
+          f' Even {even}...'
+          f' Port {parallelport}...'
+          f' Freak {frk}...'
+          f' Car {car}...'
+          f'Strikes {strikes}')
 
 
 def addstrike():
