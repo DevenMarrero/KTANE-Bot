@@ -128,7 +128,7 @@ hold     - hold
 hold on  - hold on
 lead     - lead
 led      - L. E. D.
-leed     - lead to
+leed     - lead two
 left     - left
 like     - like
 middle   - middle
@@ -139,7 +139,7 @@ okay     - okay
 press    - press
 read     - read
 red      - red
-reed     - read plant
+reed     - read two
 ready    - ready
 says     - says
 see      - see
