@@ -4,6 +4,11 @@ import speech_recognition as sr
 from gtts import gTTS
 import winsound
 
+try:
+    os.remove("voice.mp3")
+except FileNotFoundError:
+    pass
+
 
 def speak(words):
     tts = gTTS(text=words, lang="en")
