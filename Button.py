@@ -1,11 +1,22 @@
 import BombSetup
 from Voice import speak
 
+colours = ['blue', 'red', 'white', 'yellow', 'black']
+words = ['abort', 'detonate', 'hold', 'press']
+
 
 def button(text):
-    try:
-        color, word = text.split()
-    except IndexError:
+    colour = ''
+    word = ''
+    for w in words:
+        if w in text:
+            word = w
+
+    for c in colours:
+        if c in text:
+            colour = c
+
+    if '' == (colour or word):
         speak('Not a button')
         return
 
@@ -15,7 +26,7 @@ def button(text):
     elif BombSetup.batts > 2 and BombSetup.frk:
         speak("Press the Button")
 
-    elif color == 'red' and word == 'hold':
+    elif colour == 'red' and word == 'hold':
         speak("Press the Button")
 
     else:
