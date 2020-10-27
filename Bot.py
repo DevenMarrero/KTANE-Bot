@@ -81,9 +81,10 @@ if __name__ == '__main__':
             speak('Memory reset')
 
         elif 'memory' in text:  # Number on screen, then buttons
-            text = text.replace('to', '2').replace('too', '2').replace('two', '2')
-            text = text.replace('for ', '4').replace('memory ', '').replace('at', '').replace('-', '')
-            Memory.memory(text.replace(' ', ''))
+            text = text.replace('to', '2').replace('too', '2').replace('two', '2')\
+                .replace('for ', '4').replace('memory ', '').replace('at', '').replace('-', '')\
+                .replace('0', '').replace(' ', '')
+            Memory.memory(text)
 
         elif 'reset morse' in text:
             Morse.resetmorse()
