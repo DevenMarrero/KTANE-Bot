@@ -2,7 +2,7 @@ import BombSetup
 from Voice import speak
 
 colours = ['blue', 'red', 'white', 'yellow', 'black']
-words = ['abort', 'detonate', 'hold', 'gold', 'press']
+words = ['abort', 'detonate', 'hold', 'press']
 
 
 def button(text):
@@ -26,7 +26,7 @@ def button(text):
     elif BombSetup.batts > 2 and BombSetup.frk:
         speak("Press the Button")
 
-    elif colour == 'red' and (word == 'hold' or word == 'gold'):
+    elif colour == 'red' and word == 'hold':
         speak("Press the Button")
 
     else:
