@@ -42,5 +42,8 @@ def password(text):
             posibles.append(password)
 
     janswer = ' '.join([str(elem) for elem in posibles])
+    if janswer.strip() == '':
+        speak('No Possible answers')
+        return
     speak(janswer)
 

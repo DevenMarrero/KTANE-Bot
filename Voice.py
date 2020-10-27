@@ -1,21 +1,14 @@
-import os
-import playsound
 import speech_recognition as sr
-from gtts import gTTS
 import winsound
-
-try:
-    os.remove("voice.mp3")
-except FileNotFoundError:
-    pass
+import pyttsx3
 
 
 def speak(words):
-    tts = gTTS(text=words, lang="en")
-    filename = 'voice.mp3'
-    tts.save(filename)
-    playsound.playsound(filename)
-    os.remove(filename)
+    engine = pyttsx3.init()
+    engine.setProperty('rate', 160)
+
+    engine.say(words)
+    engine.runAndWait()
 
 
 def get_audio():

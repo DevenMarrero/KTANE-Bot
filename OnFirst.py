@@ -11,6 +11,7 @@ def onfirst(text):
         'cc': 'Bottom Right',
         'display': 'Bottom Right',
         'first': 'Top Right',
+        '1st': 'Top Right',
         'hold on': 'Bottom Right',
         'lead': 'Bottom Right',
         'led': 'Middle Left',
@@ -20,11 +21,12 @@ def onfirst(text):
         'okay': 'Top Right',
         'read': 'Middle Right',
         'red': 'Middle Right',
-        'read plant': 'Bottom Left',
+        'read to': 'Bottom Left',
         'says': 'Bottom Right',
         'c': 'Bottom Right',
         'see': 'Bottom Right',
         'their india': 'Middle Right',
+        'there india': 'Middle Right',
         'there': 'Bottom Right',
         'they are apostrophe': 'Bottom Left',
         'they are': 'Middle Left',
@@ -49,7 +51,6 @@ def onfirst(text):
 
 def onfirstwords(text):
     text = text.lower()
-
     if 'blank' in text:
         answer = "WAIT... RIGHT... OKAY... MIDDLE... BLANK"
 
@@ -96,7 +97,7 @@ def onfirstwords(text):
     elif 'ready' in text:
         answer = "YES... OKAY... WHAT... MIDDLE... LEFT... PRESS... RIGHT... BLANK... READY"
 
-    elif 'right' in text:
+    elif 'right' in text or 'write' in text:
         answer = "YES... NOTHING... READY... PRESS... NO... WAIT... WHAT... RIGHT"
 
     elif 'sure' in text:
@@ -105,14 +106,14 @@ def onfirstwords(text):
     elif 'you letter' in text:
         answer = "h u h... SURE... NEXT... what question... your, apostrophe...u r... U h... DONE... U"
 
-    elif 'you are letters' in text:
+    elif 'you are letters' in text or 'u r letters' in text:
         answer = "DONE... U letter... UR"
 
-    elif 'huh' in text.strip():
+    elif 'huh' in text or 'h u h' in text:
         answer = "h u h"
 
-    elif 'uh' in text.strip():
-        answer = "UR... U, letter... YOU ARE... your, apostrophe... NEXT... U h"
+    elif 'uh' in text or 'u h' in text:
+        answer = "U R letters... U, letter... YOU ARE... your, apostrophe... NEXT... U h"
 
     elif 'u3h' in text.strip():
         answer = "READY... NOTHING... LEFT... WHAT... OKAY... YES... RIGHT... NO... PRESS... BLANK... u3h"
@@ -120,18 +121,15 @@ def onfirstwords(text):
     elif 'wait' in text or 'weight' in text:
         answer = "U3h... NO... BLANK... OKAY... YES... LEFT... FIRST... PRESS... WHAT... WAIT"
 
-    elif 'what' in text:
-        answer = "u3h... WHAT"
-
     elif 'what question' in text:
         answer = "YOU... HOLD... your, apostrophe... YOUR... YOU... DONE... UH UH... LIKE... YOU ARE... h u h...u r... "\
                  "NEXT...what question"
 
+    elif 'what' in text:
+        answer = "u3h... WHAT"
+
     elif 'yes' in text:
         answer = "OKAY... RIGHT... u3h... MIDDLE... FIRST... WHAT... PRESS... READY... NOTHING... YES"
-
-    elif 'you' in text:
-        answer = "SURE... YOU ARE... YOUR... your, apostrophe... NEXT... h u h... U R... HOLD... what question... YOU"
 
     elif 'your' in text:
         answer = "U H... YOU ARE... h u h... YOUR..."
@@ -142,6 +140,10 @@ def onfirstwords(text):
     elif 'you are' in text:
         answer = "YOUR... NEXT... LIKE... H U H... what question... DONE... U H... HOLD... U letter... your apostrophe"\
                  "... SURE...u r... YOU ARE"
+
+    elif 'you' in text:
+        answer = "SURE... YOU ARE... YOUR... your, apostrophe... NEXT... h u h... U R... HOLD... what question... YOU"
+
     else:
         return "Not a Word"
     return answer

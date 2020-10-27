@@ -37,8 +37,8 @@ if __name__ == '__main__':
             text = text.replace('.', '').replace('simple wires ', '')
             SimpleWires.simplewires(text)
 
-        elif 'button' in text:  # Colour then word ie(yellow Press)
-            text = text.replace('button ', '')
+        elif 'button' in text or 'boston' in text:  # Colour then word ie(yellow Press)
+            text = text.replace('button ', '').replace('boston ', '')
             Button.button(text)
 
         elif 'strip' in text:  # Color ie(Red)
@@ -62,16 +62,19 @@ if __name__ == '__main__':
         elif "on 1st 2" in text.replace('to', '2').replace('too', '2').replace('two', '2') \
                 or "on first 2" in text.replace('to', '2').replace('too', '2').replace('two', '2'):
             text = text.replace('to', '2').replace('too', '2').replace('two', '2')
-            text = text.replace("on 1st 2", '').replace("on first 2", '')
+            text = text.replace("on 1st 2 ", '').replace("on first 2 ", '')
 
             answer = OnFirst.onfirstwords(text)
-            p = multiprocessing.Process(target=speak, args=(answer,))
-            p.start()
+            if answer != "Not a Word":
+                p = multiprocessing.Process(target=speak, args=(answer,))
+                p.start()
 
-            while p.is_alive():
-                listen = get_audio()
-                if listen == 'stop':
-                    p.terminate()
+                while p.is_alive():
+                    listen = get_audio()
+                    if listen == 'stop':
+                        p.terminate()
+            else:
+                speak(answer)
 
         elif 'reset memory' in text:
             Memory.resetmemstage()
@@ -79,8 +82,8 @@ if __name__ == '__main__':
 
         elif 'memory' in text:  # Number on screen, then buttons
             text = text.replace('to', '2').replace('too', '2').replace('two', '2')
-            text = text.replace('for ', '4').replace('memory ', '')
-            Memory.memory(text)
+            text = text.replace('for ', '4').replace('memory ', '').replace('at', '').replace('-', '')
+            Memory.memory(text.replace(' ', ''))
 
         elif 'reset morse' in text:
             Morse.resetmorse()
@@ -147,7 +150,7 @@ if __name__ == '__main__':
             total_reset()
 
         elif 'we blew up' in text:
-            speak("It's Not my Fault, i'm the bot")
+            speak("It's Not my Fault... i'm the bot")
             total_reset()
 
         elif 'bomb reset' in text:

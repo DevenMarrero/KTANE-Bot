@@ -210,7 +210,7 @@ def maze(info):
         '26': ['25', '36'],
         '36': ['26', '46'],
         '46': ['56', '36'],
-        '56': ['46', '55'],
+        '56': ['46', '66'],
         '66': ['65', '56']
 
     }
@@ -379,54 +379,41 @@ def maze(info):
     sinfo = info.split("next")
     ssinfo = []
     for word in sinfo:
-        print(word)
         word = word.replace('to', '2').replace('three', '3').replace('four', '4').replace('for', '4')\
             .replace('five', '5').replace('six', '6').replace('two', '2').replace('one', '1').replace('0', '')\
             .replace('zero', '')
-        print(word)
         ssinfo.append(word)
-        print(ssinfo)
     try:
         fmaze, player, finish = ssinfo
     except ValueError:
         speak('Not enough coordinates')
         return
-    print(fmaze)
 
     if fmaze == '12' or fmaze == '63':
-        pass
         maze = a_maze
 
     elif fmaze == '24' or fmaze == '52':
-        pass
         maze = b_maze
 
     elif fmaze == '44' or fmaze == '64':
-        pass
         maze = c_maze
 
     elif fmaze == '11' or fmaze == '14':
-        pass
         maze = d_maze
 
     elif fmaze == '53' or fmaze == '46':
-        pass
         maze = e_maze
 
     elif fmaze == '51' or fmaze == '35':
-        pass
         maze = f_maze
 
     elif fmaze == '21' or fmaze == '26':
-        pass
         maze = g_maze
 
     elif fmaze == '41' or fmaze == '34':
-        pass
         maze = h_maze
 
     elif fmaze == '32' or fmaze == '15':
-        pass
         maze = i_maze
 
     else:
