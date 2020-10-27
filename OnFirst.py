@@ -1,4 +1,4 @@
-from Voice import speak, get_audio
+from Voice import speak
 
 
 def onfirst(text):
@@ -37,7 +37,6 @@ def onfirst(text):
         'you are': 'Bottom Right',
         'you are apostrophe': 'Middle Right',
     }
-    print(word)
     if word in answer_dict:
         answer = answer_dict[word]
 
@@ -52,97 +51,98 @@ def onfirst(text):
 def onfirstwords(text):
     text = text.lower()
     if 'blank' in text:
-        answer = "WAIT... RIGHT... OKAY... MIDDLE... BLANK"
+        answer = "WAIT, RIGHT, OKAY, MIDDLE, BLANK"
 
     elif 'done' in text:
-        answer = "SURE... h u h... NEXT... WHAT, Question... YOUR...u r... your apostrophe... HOLD... LIKE... YOU... " \
-                 "U letter... " \
-                 "YOU ARE... U h... DONE"
+        answer = "SURE, h u h, NEXT, WHAT, Question, YOUR,u r letters.. your apostrophe, HOLD, LIKE, YOU, " \
+                 "U letter, " \
+                 "YOU ARE, U h, DONE"
 
     elif 'first' in text:
-        answer = "LEFT... OKAY... YES... MIDDLE... NO... RIGHT... NOTHING... u3h... MIDDLE... WAIT... READY... " \
-                 "BLANK... WHAT... PRESS... FIRST"
+        answer = "LEFT, OKAY, YES, MIDDLE, NO, RIGHT, NOTHING, u3h, MIDDLE, WAIT, READY, " \
+                 "BLANK, WHAT, PRESS, FIRST"
 
     elif 'hold' in text:
-        answer = "YOU ARE... U letter... DONE... U h... YOU...u r... SURE... what question... READY... " \
-                 "BLANK... WHAT... PRESS FIRST"
+        answer = "YOU ARE, U letter, DONE, U h, YOU,u r letters.. SURE, what question, READY, " \
+                 "BLANK, WHAT, PRESS FIRST"
 
     elif 'left' in text:
-        answer = "RIGHT... LEFT"
+        answer = "RIGHT, LEFT"
 
     elif 'like' in text:
-        answer = "your apostrophe... NEXT... U letter...u r... HOLD... DONE... U h... what question... h u h... YOU... "\
+        answer = "your apostrophe, NEXT, U letter,u r letters.. HOLD, DONE, U h, what question, h u h, YOU, "\
                  "LIKE"
 
     elif 'middle' in text:
-        answer = "BLANK... READY... OKAY... what question... NOTHING... PRESS... NO... WAIT... LEFT... MIDDLE"
+        answer = "BLANK, READY, OKAY, what question, NOTHING, PRESS, NO, WAIT, LEFT, MIDDLE"
 
     elif 'next' in text:
-        answer = "WHAT... h u h... U h... YOUR... HOLD... SURE... NEXT"
+        answer = "WHAT, h u h, U h, YOUR, HOLD, SURE, NEXT"
 
     elif 'no' in text:
-        answer = "BLANK... u3h... WAIT... FIRST... WHAT... READY... RIGHT... YES... NOTHING... LEFT... " \
-                 "PRESS... OKAY... NO"
+        answer = "BLANK, u3h, WAIT, FIRST, WHAT, READY, RIGHT, YES, NOTHING, LEFT, " \
+                 "PRESS, OKAY, NO"
 
     elif 'nothing' in text:
-        answer = "u3h... RIGHT... OKAY... MIDDLE... YES... BLANK... NO... PRESS... LEFT... WHAT... WAIT... FIRST... "\
+        answer = "u3h, RIGHT, OKAY, MIDDLE, YES, BLANK, NO, PRESS, LEFT, WHAT, WAIT, FIRST, "\
                  "NOTHING"
 
     elif 'okay' in text:
-        answer = "MIDDLE... NO... FIRST... YES... u3h... NOTHING... WAIT... OKAY"
+        answer = "MIDDLE, NO, FIRST, YES, u3h, NOTHING, WAIT, OKAY"
 
     elif 'press' in text:
-        answer = "RIGHT... MIDDLE... YES... READY... PRESS"
+        answer = "RIGHT, MIDDLE, YES, READY, PRESS"
 
     elif 'ready' in text:
-        answer = "YES... OKAY... WHAT... MIDDLE... LEFT... PRESS... RIGHT... BLANK... READY"
+        answer = "YES, OKAY, WHAT, MIDDLE, LEFT, PRESS, RIGHT, BLANK, READY"
 
     elif 'right' in text or 'write' in text:
-        answer = "YES... NOTHING... READY... PRESS... NO... WAIT... WHAT... RIGHT"
+        answer = "YES, NOTHING, READY, PRESS, NO, WAIT, WHAT, RIGHT"
 
     elif 'sure' in text:
-        answer = "YOU ARE... DONE... LIKE... your apostrophe... YOU... HOLD... h u h...u r... SURE"
+        answer = "YOU ARE, DONE, LIKE, your apostrophe, YOU, HOLD, h u h,u r letters.. SURE"
 
     elif 'you letter' in text:
-        answer = "h u h... SURE... NEXT... what question... your, apostrophe...u r... U h... DONE... U"
+        answer = "h u h, SURE, NEXT, what question, your, apostrophe,u r letters.. U h, DONE, U"
 
     elif 'you are letters' in text or 'u r letters' in text:
-        answer = "DONE... U letter... UR"
+        answer = "DONE, U letter, UR"
 
     elif 'huh' in text or 'h u h' in text:
         answer = "h u h"
 
     elif 'uh' in text or 'u h' in text:
-        answer = "U R letters... U, letter... YOU ARE... your, apostrophe... NEXT... U h"
+        answer = "U R letters, U, letter, YOU ARE, your, apostrophe, NEXT, U h"
 
     elif 'u3h' in text.strip():
-        answer = "READY... NOTHING... LEFT... WHAT... OKAY... YES... RIGHT... NO... PRESS... BLANK... u3h"
+        answer = "READY, NOTHING, LEFT, WHAT, OKAY, YES, RIGHT, NO, PRESS, BLANK, u3h"
 
     elif 'wait' in text or 'weight' in text:
-        answer = "U3h... NO... BLANK... OKAY... YES... LEFT... FIRST... PRESS... WHAT... WAIT"
+        answer = "U3h, NO, BLANK, OKAY, YES, LEFT, FIRST, PRESS, WHAT, WAIT"
 
     elif 'what question' in text:
-        answer = "YOU... HOLD... your, apostrophe... YOUR... YOU... DONE... UH UH... LIKE... YOU ARE... h u h...u r... "\
-                 "NEXT...what question"
+        answer = "YOU, HOLD, your, apostrophe, YOUR, YOU, DONE, UH UH, LIKE, YOU ARE, h u h," \
+                 "u r letters, NEXT,what question"
 
     elif 'what' in text:
-        answer = "u3h... WHAT"
+        answer = "u3h, WHAT"
 
     elif 'yes' in text:
-        answer = "OKAY... RIGHT... u3h... MIDDLE... FIRST... WHAT... PRESS... READY... NOTHING... YES"
+        answer = "OKAY, RIGHT, u3h, MIDDLE, FIRST, WHAT, PRESS, READY, NOTHING, YES"
 
     elif 'your' in text:
-        answer = "U H... YOU ARE... h u h... YOUR..."
+        answer = "U H, YOU ARE, h u h, YOUR,"
 
     elif "you are apostrophe" in text:
-        answer = "YOU... your, apostrophe"
+        answer = "YOU, your, apostrophe"
 
     elif 'you are' in text:
-        answer = "YOUR... NEXT... LIKE... H U H... what question... DONE... U H... HOLD... U letter... your apostrophe"\
-                 "... SURE...u r... YOU ARE"
+        answer = "YOUR, NEXT, LIKE, H U H, what question, DONE, U H, HOLD, U letter, your apostrophe"\
+                 ", SURE,u r letter, YOU ARE"
 
     elif 'you' in text:
-        answer = "SURE... YOU ARE... YOUR... your, apostrophe... NEXT... h u h... U R... HOLD... what question... YOU"
+        answer = "SURE, YOU ARE, YOUR, your, apostrophe, NEXT, h u h, u r letters.. HOLD, " \
+                 "what question, YOU"
 
     else:
         return "Not a Word"
