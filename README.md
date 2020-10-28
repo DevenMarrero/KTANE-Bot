@@ -13,7 +13,7 @@ The experts must then quickly flip through their multi-page [manual](https://bom
 
 Install Libraries
 
-`pip install gTTS`
+`pip install ttsx3`
 
 `pip install SpeechRecognition`
 
