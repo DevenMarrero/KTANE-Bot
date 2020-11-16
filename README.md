@@ -21,7 +21,7 @@ Install Libraries
 
 Run `Bot.py` to use
 
-**.EXE Download- Found in EXE Branch**
+**.EXE Download**
 
 Open downloaded folder and run `Bot.exe`
 
