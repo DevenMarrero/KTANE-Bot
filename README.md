@@ -8,12 +8,12 @@ This is a Python bot built to act as the 'expert' and your defusal teammate for 
 For the unfamiliar, this is a 2+ player game where one player sits at a computer and describes a bomb only they can see to the experts. 
 The experts must then quickly flip through their multi-page [manual](https://bombmanual.com/) and use the information provided to help the diffuser safely diffuse the bomb.
 
-## Installation- Windows Only
+## Installation
 **Python Clone**
 
 Install Libraries
 
-`pip install gTTS`
+`pip install pyttsx3`
 
 `pip install SpeechRecognition`
 
@@ -21,7 +21,7 @@ Install Libraries
 
 Run `Bot.py` to use
 
-**.EXE Download- Found in EXE Branch**
+**.EXE Download**
 
 Open downloaded folder and run `Bot.exe`
 
@@ -128,7 +128,7 @@ hold     - hold
 hold on  - hold on
 lead     - lead
 led      - L. E. D.
-leed     - lead to
+leed     - lead two
 left     - left
 like     - like
 middle   - middle
@@ -139,7 +139,7 @@ okay     - okay
 press    - press
 read     - read
 red      - red
-reed     - read plant
+reed     - read two
 ready    - ready
 says     - says
 see      - see
