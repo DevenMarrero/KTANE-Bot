@@ -457,7 +457,7 @@ def maze(info):
 
         # in case there's no path between the 2 nodes
         speak("A connecting path doesn't exist")
-        return "So sorry, but a connecting path doesn't exist"
+        return
 
     try:
         bfs_shortest_path(maze, player, finish)
